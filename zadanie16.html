@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Canvas</title>
+<script type="text/javascript">
+function rysuj() {
+var rysowanie = document.getElementById('obrazek');
+var rodzaj = rysowanie.getContext('2d');
+var x = 311,y = 421;
+rodzaj.beginPath();
+rodzaj.arc(200,100,60,0,360,false);
+rodzaj.closePath();
+rodzaj.lineWidth = 10;
+rodzaj.strokeStyle = "blue";
+rodzaj.stroke();
+rodzaj.beginPath();
+rodzaj.arc(290,140,60,0,360,false);
+rodzaj.closePath();
+rodzaj.lineWidth = 10;
+rodzaj.strokeStyle = "yellow";
+rodzaj.stroke();
+rodzaj.beginPath();
+rodzaj.arc(380,100,60,0,360,false);
+rodzaj.closePath();
+rodzaj.lineWidth = 10;
+rodzaj.strokeStyle = "black";
+rodzaj.stroke();
+rodzaj.beginPath();
+rodzaj.arc(470,140,60,0,360,false);
+rodzaj.closePath();
+rodzaj.lineWidth = 10;
+rodzaj.strokeStyle = "green";
+rodzaj.stroke();
+rodzaj.beginPath();
+rodzaj.arc(560,100,60,0,360,false);
+rodzaj.closePath();
+rodzaj.lineWidth = 10;
+rodzaj.strokeStyle = "red";
+rodzaj.stroke();
+}
+</script>
+</head>
+<body onload="rysuj();">
+<canvas id="obrazek" width="5000" height="7000">
+Twoja przeglądarka nie wspiera Canvas!
+Zainstaluj Internet Explorer 9.x
+</canvas>
+</body>
+</html>

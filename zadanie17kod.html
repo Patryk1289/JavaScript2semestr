@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+
+    </head>
+    <body>
+        <textarea rows="100" cols="100">
+            <!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Canvas</title>
+<script type="text/javascript">
+function rysuj() {
+var rysowanie = document.getElementById('obrazek');
+var rodzaj = rysowanie.getContext('2d');
+var rodzaj2 = rysowanie.getContext('2d');
+
+var x = 70,y = 70;
+rodzaj2.beginPath();
+rodzaj2.moveTo(50,280);
+rodzaj2.quadraticCurveTo(20,220,150,280);
+rodzaj2.closePath();
+rodzaj2.strokeStyle = "green";
+rodzaj2.fillStyle = "green";
+rodzaj2.stroke();
+rodzaj2.fill();
+rodzaj2.beginPath();
+rodzaj2.moveTo(50,280);
+rodzaj2.quadraticCurveTo(20,340,150,280);
+rodzaj2.closePath();
+rodzaj2.strokeStyle = "green";
+rodzaj2.fillStyle = "green";
+rodzaj2.stroke();
+rodzaj2.fill();
+
+rodzaj2.beginPath();
+rodzaj2.moveTo(60+y,280);
+rodzaj2.quadraticCurveTo(190+y,220,150+y,280);
+rodzaj2.closePath();
+rodzaj2.strokeStyle = "green";
+rodzaj2.fillStyle = "green";
+rodzaj2.stroke();
+rodzaj2.fill();
+rodzaj2.beginPath();
+rodzaj2.moveTo(60+y,280);
+rodzaj2.quadraticCurveTo(190+y,340,150+y,280);
+rodzaj2.closePath();
+rodzaj2.strokeStyle = "green";
+rodzaj2.fillStyle = "green";
+rodzaj2.stroke();
+rodzaj2.fill();
+
+
+rodzaj.beginPath();
+rodzaj.moveTo(140,280);
+rodzaj.quadraticCurveTo(70,150,140,180);
+rodzaj.closePath();
+rodzaj.strokeStyle = "green";
+rodzaj.fillStyle = "green";
+rodzaj.stroke();
+rodzaj.fill();
+rodzaj.beginPath();
+rodzaj.moveTo(140,280);
+rodzaj.quadraticCurveTo(210,150,140,180);
+rodzaj.closePath();
+rodzaj.strokeStyle = "green";
+rodzaj.fillStyle = "green";
+rodzaj.stroke();
+rodzaj.fill();
+
+rodzaj.beginPath();
+rodzaj.moveTo(140,280);
+rodzaj.quadraticCurveTo(140+x,400,140,360);
+rodzaj.closePath();
+rodzaj.strokeStyle = "green";
+rodzaj.fillStyle = "green";
+rodzaj.stroke();
+rodzaj.fill();
+rodzaj.beginPath();
+rodzaj.moveTo(140,280);
+rodzaj.quadraticCurveTo(0+x,400,140,360);
+rodzaj.closePath();
+rodzaj.strokeStyle = "green";
+rodzaj.fillStyle = "green";
+rodzaj.stroke();
+rodzaj.fill();
+}
+</script>
+</head>
+<body onload="rysuj();">
+<canvas id="obrazek" width="5000" height="7000">
+Twoja przeglądarka nie wspiera Canvas!
+Zainstaluj Internet Explorer 9.x
+</canvas>
+</body>
+</html>
+        </textarea>
+    </body>
+</html>
